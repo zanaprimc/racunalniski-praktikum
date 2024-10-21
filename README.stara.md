@@ -1,5 +1,5 @@
 # Računalniški praktikum
 Bližnjice:
-Cmd+S (shrani);
-Cmd+Tab (preklapljanje med okni);
-Cmd+F (išči)
++ Cmd + <kbd>S</kbd> (shrani);
++ Cmd + <kbd>Tab</kbd> (preklapljanje med okni);
++ Cmd + <kbd>F</kbd> (išči)
