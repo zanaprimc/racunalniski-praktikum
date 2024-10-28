@@ -14,8 +14,9 @@ h2 {
     background-color: rgb(51, 0, 102, 0.1)
 }
 
-div.slika { 
-    font-size: 0.9em; width: 40%;
+.slika { 
+    font-size: 0.9em; 
+    width: 40%;
     float: right;
     margin-left: 2em;
 }
@@ -23,6 +24,12 @@ div.slika {
 .slika img {
     width: 100%;
     height: auto;
+    border-radius: 50%;
+}
+
+.slika p:last-child {
+    font-size: 0.8em;
+    background-color: #e8e0cd 
 }
 
 body {
