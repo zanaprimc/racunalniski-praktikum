@@ -7,6 +7,16 @@
 \usepackage{url}
 \usepackage{graphicx}
 
+\usepackage{amsthm}
+
+{\theoremstyle{plain}
+\newtheorem{izrek}{Izrek}[section]
+}
+
+{\theoremstyle{definition}
+\newtheorem{definicija}[izrek]{Definicija}
+}
+
 % Nastavimo koliko prostora izpustimo pod napisom nad sliko ali tabelo.
 \setlength{\belowcaptionskip}{2mm}
 % Nastavimo odmik prve vrstice v odstavku na 0mm.
@@ -60,12 +70,12 @@ Prirejeno iz virov:
 
 \section{Uvod}
 
-% \begin{definicija}
+\begin{definicija}
    \emph{Magični kvadrat} reda $n$ je nabor $n^2$ različnih števil,
    ki so razvrščena v kvadratno tabelo tako, da vedno dobimo enako vsoto,
    če seštejemo vsa števila poljubne vrstice, vsa števila poljubnega
    stolpca ali vsa števila v katerikoli od glavnih diagonal.
-% \end{definicija}
+\end{definicija}
 
 Primer magičnega kvadrata reda 3 je prikazan v tabeli ?!?.
 
@@ -77,13 +87,13 @@ Primer magičnega kvadrata reda 3 je prikazan v tabeli ?!?.
 %   4 & 9 & 2 \\\hline
 % Konec magičnega kvadrata
 
-% \begin{definicija}
+\begin{definicija}
    Magični kvadrat reda $n$ je \emph{normalen}, če v njem nastopajo števila
    \begin{equation}
       % oznaka: eq:numbers
       1, 2, 3, \ldots, n^2-1, n^2.
    \end{equation}
-% \end{definicija}
+\end{definicija}
 
 Magični kvadrat v tabeli ?!? je normalen.
 To je tudi najmanjši netrivialen normalen magični kvadrat.
@@ -156,7 +166,13 @@ približno 250 let pred Dürerjevim časom. % sklic: fig:durer
 % - oznaka: fig:durer
 % Dodatni parameter v oglatih oglepajih sliko nastavi velikost
 % slike na 150% originalne velikosti.
-\includegraphics[scale=1.3]{durer.png}
+
+\begin{figure}[!ht]
+   \centering
+   \caption{Dürerjev magični kvadrat}
+   \includegraphics[scale=1.3]{durer.png}
+   \label{fig:durer}
+\end{figure}
 
 Vsoto 34 je mogoče najti pri seštevanju števil v vsaki vrstici, vsakem stolpcu,
 na vsaki diagonali, v vsakem od štirih kvadrantov, v sredinskih štirih poljih,
@@ -179,7 +195,13 @@ Pasijonska fasada na katedrali Sagrada família v Barceloni
 % Tu vstavite sliko
 % - napis nad sliko: Pasijonska fasada, Sagrada Família
 % - oznaka: fig:sagrada
-\includegraphics{sagrada.png}
+
+\begin{figure}[!ht]
+   \centering
+   \caption{Pasijonska fasada, Sagrada Familia}
+   \includegraphics{sagrada.png}
+   \label{fig:sagrada}
+\end{figure}
 
 Vsota števil v vrsticah, stolpcih oziroma na diagonalah je 33 -- Jezusova starost
 v času pasijona. Strukturno je kvadrat podoben Dürerjevemu, vendar so števila
@@ -197,26 +219,31 @@ in zato kvadrat ni normalen.
 
 \section{Osnovne lastnosti}
 
-% \begin{definicija}
+\begin{definicija}
       Vsoto ene vrstice, enega stolpca ali ene od glavnih diagonal
       v magičnem kvadratu imenujemo \emph{magična konstanta}.
-% \end{definicija}
+\end{definicija}
 
 % Začetek okolja izrek
+\begin{izrek}
    Magična konstanta normalnega magičnega kvadrata reda !!
    je enaka
    \begin{equation}
-      % oznaka: eq:mc
-      M_2(n) = \frac{1}{2} n(n^2+1)
+   % oznaka: eq:mc
+   M_2(n) = \frac{1}{2} n(n^2+1)
    \end{equation}
+\end{izrek}
 % Konec okolja izrek
 
 % Začetek dokaza
-   V normalnem magičnem kvadratu reda $n$ je vsota vseh nastopajočih
-   števil (glej ?? na strani ??) enaka
-   $1+2+3+\dots+n^2=\sum_{k=1}^{n^2}k=\frac{1}{2}n^2(n^2+1)$. Ker imamo
-   v kvadratu $n$ vrstic z enako vsoto, je vsota števil v eni vrstici
-   enaka številu $M_2(n)$. % sklica: eq:numbers, eq:numbers
+   
+   \begin{proof}
+      V normalnem magičnem kvadratu reda $n$ je vsota vseh nastopajočih
+      števil (glej ?? na strani ??) enaka
+      $1+2+3+\dots+n^2=\sum_{k=1}^{n^2}k=\frac{1}{2}n^2(n^2+1)$. Ker imamo
+      v kvadratu $n$ vrstic z enako vsoto, je vsota števil v eni vrstici
+      enaka številu $M_2(n)$. % sklica: eq:numbers, eq:numbers
+   \end{proof}
 % Konec dokaza
 
 Preprost račun pokaže, da je konstanti ?? analogna konstanta
@@ -225,11 +252,11 @@ $A$, $A+D$, $A+2D$, \dots, $A+(n^2-1)D$, enaka % sklic: eq:mc
 !!
 Kvadratu v tabeli ?!? ustrezata konstanti $A=20$ in $D=1$.
 
-% \begin{definicija}
+\begin{definicija}
       Če vsako od števil v normalnem magičnem kvadratu reda $n$ odštejemo
       od števila $n^2+1$, dobimo nov magični kvadrat, ki je prvotnemu
       \emph{komplementaren}.
-% \end{definicija}
+\end{definicija}
 
 Na primer, magičnemu kvadratu Lo Shu (glej tabelo ?!?) priredimo
 komplementarni kvadrat, prikazan v tabeli ?!?.
@@ -246,10 +273,10 @@ iz kvadrata Lo Shu z zrcaljenjem preko sredinske vodoravne črte.
 
 Število različnih normalnih magičnih kvadratov
 
-% \begin{definicija}
+\begin{definicija}
       Pravimo, da sta dva magična kvadrata \emph{različna}, če enega ni mogoče dobiti
       iz drugega s pomočjo zasukov oziroma zrcaljenj.
-% \end{definicija}
+\end{definicija}
 
 Števila različnih normalnih magičnih kvadratov se nahajajo v tabeli ??.
 % sklic: table:stevila
@@ -257,9 +284,17 @@ iz kvadrata Lo Shu z zrcaljenjem preko sredinske vodoravne črte.
 % - napis nad tabelo: Število različnih normalnih magičnih kvadratov
 % - oznaka: table:stevila
 % Začetek tabele
-      točna vrednost približek
-      red 1 2 3 4 5 6
-      število kvadratov 1 0 1 880 275305224 !!
+
+\begin{table}
+   \centering
+   \begin{tabular}{|l|c|c|c|c|c|c|}
+      & \multicolumn{5}{|c|}{točna vrednost} & približek \\\hline
+      red & 1 & 2 & 3 & 4 & 5 & 6 \\\hline
+      število kvadratov & 1 & 0 & 1 & 880 & 275305224 & !! \\\hline
+   \end{tabular}
+   \caption{Število različnih normalnih magičnih kvadratov}
+   \label{table:stevila}
+\end{table}
 % Konec tabele
 
 Vse normalne magične kvadrate reda 4 je oštevilčil Frénicle de Bessy
