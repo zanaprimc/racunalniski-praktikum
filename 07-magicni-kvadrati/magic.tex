@@ -6,7 +6,7 @@
 
 \usepackage{url}
 \usepackage{graphicx}
-
+\usepackage{booktabs}
 \usepackage{amsthm}
 
 {\theoremstyle{plain}
@@ -284,13 +284,12 @@ iz kvadrata Lo Shu z zrcaljenjem preko sredinske vodoravne črte.
 % - napis nad tabelo: Število različnih normalnih magičnih kvadratov
 % - oznaka: table:stevila
 % Začetek tabele
-
 \begin{table}
    \centering
-   \begin{tabular}{|l|c|c|c|c|c|c|}
-      & \multicolumn{5}{|c|}{točna vrednost} & približek \\\hline
-      red & 1 & 2 & 3 & 4 & 5 & 6 \\\hline
-      število kvadratov & 1 & 0 & 1 & 880 & 275305224 & !! \\\hline
+   \begin{tabular}{lcccccc}\toprule
+      & \multicolumn{5}{c}{točna vrednost} & približek \midrule
+      red & 1 & 2 & 3 & 4 & 5 & 6 
+      število kvadratov & 1 & 0 & 1 & 880 & 275305224 & !! \bottomrule
    \end{tabular}
    \caption{Število različnih normalnih magičnih kvadratov}
    \label{table:stevila}
