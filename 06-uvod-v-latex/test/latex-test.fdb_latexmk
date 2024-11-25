@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1731164692.21294 "/Users/zanaprimc/Desktop/RP/racunalniski-praktikum/06-uvod-v-latex/test/latex-test.tex" "latex-test.pdf" "latex-test" 1731164692.48431 0
-  "/Users/zanaprimc/Desktop/RP/racunalniski-praktikum/06-uvod-v-latex/test/latex-test.tex" 1731164692.00437 210 2173a8dddac3b981d597beb6d8e07c7e ""
+["pdflatex"] 1731937559.28485 "/Users/zanaprimc/Desktop/RP/racunalniski-praktikum/06-uvod-v-latex/test/latex-test.tex" "latex-test.pdf" "latex-test" 1731937559.6051 0
+  "/Users/zanaprimc/Desktop/RP/racunalniski-praktikum/06-uvod-v-latex/test/latex-test.tex" 1731164921.53671 210 2173a8dddac3b981d597beb6d8e07c7e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -16,8 +16,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1730666311.3619 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1730666278 8221420 49427b052de970f3b2485044b9d183ec ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "latex-test.aux" 1731164692.46467 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "latex-test.tex" 1731164692.00437 210 2173a8dddac3b981d597beb6d8e07c7e ""
+  "latex-test.aux" 1731937559.56017 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "latex-test.tex" 1731164921.53671 210 2173a8dddac3b981d597beb6d8e07c7e ""
   (generated)
   "latex-test.aux"
   "latex-test.log"
