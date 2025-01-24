@@ -1,0 +1,54 @@
+\documentclass[a4paper,12pt]{article}   % ali beamer
+
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% neobvezni paketi:
+\usepackage{lmodern}           % Boljši fonti, s pravimi šumniki
+\usepackage{amsmath}           % razna okolja za poravnane enačbe ipd.
+\usepackage{amssymb}           % dodatni matematični simboli 
+\usepackage{amsth}             % definicije okolij za izreke, definicije, ...
+\usepackage{hyperref}          % Paket za povezave znotraj dokumenta in hiper-povezave
+\usepackage{booktabs}          % za lepše tabele
+\usepackage{graphicx}          % za vstavljanje slik 
+\usepackage{tikz}              % risanje slik
+\usepackage{pgfplots}          % za risanje grafa funkcije
+
+% Definicija okolij izrek, posledica
+{\theoremstyle{plain}
+\newtheorem{izrek}{Izrek}[section]
+\newtheorem{posledica}[izrek]{Posledica}
+}
+
+% Definicija okoli za definicije in vaje
+{\theoremstyle{definition}
+\newtheorem{definicija}[izrek]{Definicija}
+\newtheorem{vaja}[izrek]{Vaja}
+}
+
+% Definicija novih ukazov
+\newcommand{\f}{\mathcal{F}} 
+
+% Naslov
+\title{Brownovo gibanje}
+\author{Matej Rojec}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% kazalo vsebine
+\tableofcontents
+
+% citiranje
+% dodaš na koncu dokumenta
+\bibliographystyle{plain}
+\bibliography{knjiga}       % tu je knjiga.bib source bibliografije
+% primeri za značke \label in ref v dokument.tex (dn latex)
+
+% prosojnice
+% S pomožnim parametrom <+-> lahko določimo, da se bodo 
+		% elementi naštevanja odkrivali postopoma.
+        \begin{itemize}[<+->]
